@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Manager 🛍</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f4f4f9;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      padding:  12px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+    th {
+      background: #4CAF50;
+      color: white;
+    }
+    input {
+      padding: 8px;
+      margin: 5px 0;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      padding: 10px 16px;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Product Manager 🛍</h2>
+    <form id="productForm">
+      <label><strong>Name:</strong></label>
+      <input type="text" id="name" required>
+      <label><strong>Price (₹):</strong></label>
+      <input type="number" id="price" required>
+      <label><strong>Category:</strong></label>
+      <input type="text" id="category" required>
+      <button type="submit">Add Product</button>
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Price (₹)</th>
+          <th>Category</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="productTable">
+        <!-- Products will appear here -->
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    let products = [];
+    const form = document.getElementById('productForm');
+    const tableBody = document.getElementById('productTable');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const price = document.getElementById('price').value;
+      const category = document.getElementById('category').value;
+      addProduct({ name, price, category });
+      form.reset();
+    });
+
+    function addProduct(product) {
+      products.push(product);
+      renderTable();
+    }
+
+    function deleteProduct(index) {
+      products.splice(index, 1);
+      renderTable();
+    }
+
+    function renderTable() {
+      tableBody.innerHTML = '';
+      products.forEach((p, i) => {
+        tableBody.innerHTML += `
+          <tr>
+            <td>${p.name}</td>
+            <td>₹${p.price}</td>
+            <td>${p.category}</td>
+            <td><button onclick="deleteProduct(${i})">Delete</button></td>
+          </tr>
+        ';
+      });
+    }
+  </script>
+</body>
+</html>

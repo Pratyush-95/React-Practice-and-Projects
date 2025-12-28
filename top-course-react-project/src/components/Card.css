@@ -1,0 +1,43 @@
+.card {
+    background-color: rgba(31, 41, 55, 0.8); 
+    width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.card-media {
+    position: relative;
+}
+.card-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.like-container {
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    right: 12px;
+    bottom: 0px;        
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+.like-container svg {
+    color: #ff4da6 !important;   
+}
+.card-body {
+    padding: 16px;
+}
+.card-title {
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+}
+.card-desc {
+    color: white;
+    margin-top: 8px;
+}

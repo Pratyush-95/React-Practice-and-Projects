@@ -22,14 +22,20 @@ React-Practice-and-Projects/
 ├── 💬 Testimonial/
 │   └── Responsive testimonial section using React & CSS
 │
-├── 📝 To-Do-List/
+├── 📝 To-Do List/
 │   └── Task management app using React hooks
+│
+├── 🔢 generate-random-no/
+│   └── Generate random number app using React
+│
+├── 🧾 react-from/
+│   └── React form practice project (inputs & validation)
 │
 ├── 🌍 tourism-plan/
 │   └── UI-based mini project for travel planning
 │
-└── README.md
-
+└── 📄 README.md
+    └── Project overview, structure & tech stack
 
 🧠 Concepts & Skills Practiced
 

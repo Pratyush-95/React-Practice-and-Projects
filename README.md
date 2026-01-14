@@ -6,7 +6,7 @@ This repository showcases my **React learning journey**, including practice exer
 The purpose of this repository is to:
 - Strengthen React fundamentals
 - Improve UI & component-based thinking
-- Build real-world mini projects
+- Build real-world mini project
 - Maintain a clean and professional GitHub portfolio
 
 ---

@@ -17,25 +17,28 @@ The purpose of this repository is to:
 React-Practice-and-Projects/
 │
 ├── 🎨 Color-Change-app/
-│   └── React app to practice state & event handling
+│ └── React app to practice state management & event handling
 │
 ├── 💬 Testimonial/
-│   └── Responsive testimonial section using React & CSS
+│ └── Responsive testimonial section using React & CSS
 │
-├── 📝 To-Do List/
-│   └── Task management app using React hooks
+├── 📝 To-Do-List/
+│ └── Task management app using React Hooks
 │
 ├── 🔢 generate-random-no/
-│   └── Generate random number app using React
+│ └── Random number generator using React
 │
-├── 🧾 react-from/
-│   └── React form practice project (inputs & validation)
+├── 🧾 react-form/
+│ └── React form practice (inputs, validation & controlled components)
 │
 ├── 🌍 tourism-plan/
-│   └── UI-based mini project for travel planning
+│ └── UI-based mini project for travel planning
+│
+├── 🎞 random-gif/
+│ └── Random GIF generator using React, API & Tailwind CSS
 │
 └── 📄 README.md
-    └── Project overview, structure & tech stack
+└── Project overview, structure & tech stack
 
 🧠 Concepts & Skills Practiced
 

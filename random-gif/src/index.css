@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  
+}
+/* Full screen dotted background */
+.background {
+  min-height: 100vh;
+  width: 100vw;
+
+  background-color: #a8d8f0;
+  background-image: radial-gradient(circle, white 1.2px, transparent 1.2px);
+  background-size: 35px 35px;
+}
+
+/* Spinner */
+.spinner {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: conic-gradient(#0000 10%, #474bff);
+  -webkit-mask: radial-gradient(
+    farthest-side,
+    #0000 calc(100% - 9px),
+    #000 0
+  );
+  animation: spinner-zp9dbg 1s infinite linear;
+}
+
+@keyframes spinner-zp9dbg {
+  to {
+    transform: rotate(1turn);
+  }
+}

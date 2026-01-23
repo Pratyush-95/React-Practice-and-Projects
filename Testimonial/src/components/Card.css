@@ -1,0 +1,52 @@
+.card {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+.image-wrapper {
+  position: absolute;
+  top: -50px;
+  left: 40px;
+}
+.profile-img {
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+}
+.image-bg {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: #8b5cf6;
+  border-radius: 50%;
+  top: -4px;
+  left: 6px;
+  z-index: 1;
+}
+.content {
+  margin-top: 2.4rem;          
+}
+.name {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.job {
+  font-size: 1.1rem;
+  color: #c4b5fd;
+  margin-top: 2px;
+}
+.quote-icon {
+  color: #a855f7;
+  margin: 10px auto;
+  font-size: 1.1rem;
+}
+.review-text {
+  max-width: 500px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: #64748b;
+  line-height: 1.55;
+}
